@@ -11,6 +11,8 @@ body{
     height: 100vh;
     width: 100wh;
     background-color: rgba(31, 204, 77, 0.584);
+    background-image: url("background.jpg");
+    background-color: #cccccc;
 
 }
 
