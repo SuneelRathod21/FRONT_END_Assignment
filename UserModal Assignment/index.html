@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User List</title>
+    <head>
+        <title>User List</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+    </head>
+    
+</head>
+<body>
+    <h1>Users List</h1>
+    <table id="userTable">
+        <tr>
+            <th>User Name</th>
+            <th>User Type</th>
+            <th>Last Accessed Time</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>SUNEEL</td>
+            <td>Admin</td>
+            <td>2023-05-28 8:30AM</td>
+            
+            <td>
+                <button onclick="openModal('SUNEEL RATHOD', '101', 'Admin', 'Sunil R', '29-05-2023  8:30AM', '8088513580', 'sunilmsr02@gmail.com',1)">Edit</button>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Daksh</td>
+            <td>User</td>
+            <td>2023-05-30 2:00AM</td>
+            <td>
+                <button onclick="openModal('Daksh', '110', 'User', 'Sunil R', '28-05-2023   2:00AM', '8147951980', 'daksh1111@gmail.com',2)">Edit</button>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Faraz</td>
+            <td>User</td>
+            <td>30-05-2023 7:30pm</td>
+            <td>
+                <button onclick="openModal('Faraz', '201', 'User', 'Sunil R', '30-05-2023 7:30pm', '8888000022', 'faraz88888@gmail.com',3)">Edit</button>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Anzer</td>
+            <td>User</td>
+            <td>30-05-2023 8:59PM</td>
+            <td>
+                <button onclick="openModal('Anzer', '401', 'User', 'Sunil R', '30-05-2023 8:59PM', '9993332220', 'Anzer401401@gmail.com',4)">Edit</button>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>Praveen</td>
+            <td>User</td>
+            <td>31-05-2023 9:30PM</td>
+            <td>
+                <button onclick="openModal('Praveen', '501', 'User', 'Sunil R', '31-05-2023 9:30PM', '1234567890', 'Praveen1111@gmail.com',5)">Edit</button>
+                
+            </td>
+        </tr>
+    </table>
+
+        <!-- Add more rows for other users -->
+    </table>
+
+    <div id="userModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>User Details</h2>
+            <hr></hr>
+            <table>
+                <tr>
+                    <td>User Name:</td>
+                    <td><input type="text" id="modalUserName"></input></td>
+                </tr>
+                <tr>
+                    <td>User ID:</td>
+                    <td><input type="number" id="modalUserId"></input></td>
+                </tr>
+                <tr>
+                    <td>User Type:</td>
+                    <td><input type="text" id="modalUserType"></input></td>
+                </tr>
+                <tr>
+                    <td>Created By:</td>
+                    <td><input type="text" id="modalCreatedBy"></input></td>
+                </tr>
+                <tr>
+                    <td>Last Accessed Time:</td>
+                    <td><input type="datetime" id="modalLastAccessedTime"></input></td>
+                </tr>
+                <tr>
+                    <td>Contact No:</td>
+                    <td><input type="number" id="modalContactNo"></input></td>
+                </tr>
+                <tr>
+                    <td>Email ID:</td>
+                    <td><input type="email" id="modalEmailId"></input></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" onclick="updateEntity()">Submit </button>
+                        <button type="button" onclick="closeModal()">Cancel</button>
+                    </td>
+                </tr>               
+            </table>
+        </div>
+    </div>   
+</body>
+</html>
