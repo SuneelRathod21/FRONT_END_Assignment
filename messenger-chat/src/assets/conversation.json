@@ -1,0 +1,20 @@
+[
+{
+    "name": "daksh",
+    "time": "8:50",
+    "latestMessage": "Good Morning!",
+    "latestMessageRead": false
+},
+{
+    "name": "Faraz",
+    "time": "8:59",
+    "latestMessage": "hello!",
+    "latestMessageRead": true
+},
+{
+    "name": "Anzer",
+    "time": "9:21",
+    "latestMessage": "whats up!",
+    "latestMessageRead": false
+}
+]

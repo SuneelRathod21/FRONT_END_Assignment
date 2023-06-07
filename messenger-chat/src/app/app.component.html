@@ -1,0 +1,27 @@
+<div id="background-header"></div>
+<div id="background-body"></div>
+
+<div id="chatContainer">
+    <app-sidebar (conversationClicked)="onConversationSelected($event)"></app-sidebar>
+    <div id="chat">
+        <div *ngIf="selectedConversation">
+            <h2>{{ selectedConversation.name }}</h2>
+            <p>{{ selectedConversation.time }}</p>
+            <p>{{ selectedConversation.latestMessage }}</p>
+            <p>{{ selectedConversation.latestMessageRead }}</p>
+        </div>
+        
+    </div>
+    <div id="chat">
+        <div id="chatplaceholder" *ngIf="!conversation">
+          <img width="400" src="../assets/images/phoneIcon.png" />
+          <h2>Keep your phone connected</h2>
+          
+          <div class="seperator"></div>
+    
+          
+        </div>
+    
+        <app-chat *ngIf="conversation"></app-chat>
+      </div>
+<router-outlet></router-outlet>
